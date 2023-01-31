@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Iteration Statements.</h1>
+    
+    <h2>Q1: Find the number of digits?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Find_Digits = (n) => 
+        {
+             let count=0;
+             while (n!==0){
+               count++;
+               n=Math.floor(n/10);
+               
+              }
+             return count;
+        };
+        
+        </pre>
+    </fieldset>
+
+    <h2>Q2: Find the Fives?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Find_Five = (n) => 
+{
+	let count=0;
+	while(n > 0)
+	{
+	  if(n % 10===5)
+	  {
+	  count++;
+	}
+	
+	n=parseInt(n/10);
+}
+return count;
+};
+
+        </pre>
+    </fieldset>
+
+
+    <h2>Q3:Find Sum?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const findSum = (n) => {
+            let it, ans=0;
+            for(it=1;it<=n;it++) {
+              if(it%2===0) {
+                ans+=it;
+              }
+            }
+            return ans;
+            
+        };
+        
+    </pre>
+    </fieldset>
+
+    <h2>Q4:Find the sum of the digits of a given number?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Number_Sum = (N) => 
+{
+ let sum = 0;
+	while(N>0){
+	  sum += N%10;
+	  N = Math.floor (N/10);
+	}
+	return sum;
+};
+</pre>
+    </fieldset>
+
+    <h2>Q5:Print the Odds?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Print_Odd = (N) => 
+        {
+           console.log(2);
+            for(let i=3;i<=N;i++) {
+              if(i%2==1) {
+                console.log(i+ "");
+              }
+            }
+          
+        };
+    </pre>
+    </fieldset>
+
+    <h2>Q6:Print the Pattern?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Print_pattern = (N) => 
+        {
+        let string = "";
+        for (let i = 1; i <= N; i++) {
+          for (let j = 0; j <i; j++) {
+            string += "*"
+          }
+          string += "\n";
+        }
+        console.log(string);
+        };
+        
+         </pre>
+    </fieldset>
+
+    <h2>Q7:Check if the number is Prime or not?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Prime_Check = (N) => 
+{
+	 let count=0;
+	 for(let i=1;i<=N;i++){
+	   
+	   if(N%i===0){
+	     count++;
+	   }
+	   
+	 }
+	 
+	 if(count==2)
+	 return "YES";
+	 else
+	 return "NO"
+	
+};
+
+       </pre>
+    </fieldset>
+
+    <h2>Q8:Print Numbers?</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const printNumbers = (n) => {
+            let s = "";
+           for(let i=1; i <=n; i++){
+             
+            s = s + i + " " ;
+            // console.log(i');
+            
+           }  
+           console.log(s)
+          };
+          
+    </pre>
+    </fieldset>
+
+    <h2>Q9:Print the Table</h2>
+    <fieldset>
+    <pre style="color: rgb(153, 20, 20);">Ans:
+        const Print_Table = (N) => 
+        {
+            for(let i = 1; i <= 10; i++) {
+              console.log(N + " * " + i + " = " + N * i)
+            }
+        };
+        
+          
+    </pre>
+    </fieldset>
+
+
+</body>
+</html>
